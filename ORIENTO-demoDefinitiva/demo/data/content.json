@@ -1,0 +1,235 @@
+{
+  "_nota": "Lezioni e quiz costruiti SOLO dalla documentazione Palitalsoft fornita. Ogni unita' e ogni domanda indica la guida di origine. Da rivedere a cura del team.",
+  "argomenti": {
+    "PROT_ARRIVO":        {"nome": "Protocollazione in arrivo", "modulo": "Protocollo", "corso": "C_ARRIVO"},
+    "PROT_PEC":           {"nome": "PEC ed e-mail in arrivo", "modulo": "Protocollo", "corso": "C_PEC"},
+    "PROT_PARTENZA":      {"nome": "Partenze e invio PEC", "modulo": "Protocollo", "corso": "C_PARTENZA"},
+    "PROT_FATTURE":       {"nome": "Fatture elettroniche", "modulo": "Protocollo", "corso": "C_FATTURE"},
+    "PROT_ASSEGNAZIONI":  {"nome": "Documenti interni e assegnazioni", "modulo": "Protocollo", "corso": "C_ASSEGNAZIONI"},
+    "PROT_RICERCA":       {"nome": "Ricerca e visibilità dei protocolli", "modulo": "Protocollo", "corso": "C_RICERCA"},
+    "PROT_ACCESSO":       {"nome": "Accesso e sessioni utente", "modulo": "Protocollo", "corso": "C_ACCESSO"},
+    "PROT_CONSERVAZIONE": {"nome": "Conservazione e registro giornaliero", "modulo": "Protocollo", "corso": "C_CONSERVAZIONE"},
+    "DEMO_CERTIFICATI":   {"nome": "Rilascio certificati anagrafici", "modulo": "Servizi Demografici", "corso": "C_CERTIFICATI"},
+    "ALTRO":              {"nome": "Altro / non classificato", "modulo": "-", "corso": null}
+  },
+  "corsi": [
+    {
+      "id": "C_ARRIVO", "argomento": "PROT_ARRIVO", "titolo": "Protocollare un documento in arrivo", "durata_min": 8,
+      "unita": [
+        {"tipo": "video", "titolo": "Protocollare un documento cartaceo", "path": "04 - Protocollo/video/1_login_protocollazione_arrivi_cartaceo_pec_fattura.md", "anchor": "protocollare-un-documento-cartaceo"},
+        {"tipo": "guida", "titolo": "I campi obbligatori", "path": "04 - Protocollo/008 - arrivo.md", "anchor": "campi-obbligatori"}
+      ],
+      "quiz": [
+        {"domanda": "Nella schermata di protocollazione in arrivo, quali sono i tre campi obbligatori?",
+         "opzioni": ["Oggetto, mittente e classificazione", "Oggetto, mittente e assegnatari", "Mittente, data del documento e allegati", "Oggetto, classificazione e fascicolo"],
+         "corretta": 0, "spiegazione": "La schermata propone molti campi, ma solo tre sono obbligatori: oggetto, mittente e classificazione.",
+         "fonte": {"path": "04 - Protocollo/008 - arrivo.md", "sezione": "Protocollare un documento in Arrivo"}},
+        {"domanda": "Devi acquisire un documento cartaceo da uno scanner collegato. Quale comando usi nella sezione Allegati?",
+         "opzioni": ["Da File", "Da Scanner", "Protocolla Mail", "Duplica Doc."],
+         "corretta": 1, "spiegazione": "Da File serve per un documento già presente sul computer; Da Scanner per acquisirlo da uno scanner collegato.",
+         "fonte": {"path": "04 - Protocollo/video/1_login_protocollazione_arrivi_cartaceo_pec_fattura.md", "sezione": "Protocollare un documento cartaceo"}},
+        {"domanda": "Cosa succede cliccando sulla lente accanto al campo Oggetto?",
+         "opzioni": ["Si apre la ricerca nei protocolli già registrati", "Si accede all'archivio degli oggetti precaricati, che può compilare anche Mittente, Titolario e Assegnatari", "Si avvia il controllo ortografico dell'oggetto", "Si apre l'Indice PA"],
+         "corretta": 1, "spiegazione": "La lente apre l'archivio degli oggetti: scegliendo un testo precaricato il programma compila anche Mittente, Titolario e Assegnatari se valorizzati.",
+         "fonte": {"path": "04 - Protocollo/008 - arrivo.md", "sezione": "Campi obbligatori › Oggetto"}},
+        {"domanda": "A cosa serve il bottone \"Cerca IPA\" accanto al mittente?",
+         "opzioni": ["A cercare un protocollo collegato", "A cercare, tramite l'Indice PA, l'indirizzo PEC aggiornato di una Pubblica Amministrazione", "A verificare la firma digitale del mittente", "A importare i dati da ANPR"],
+         "corretta": 1, "spiegazione": "Cerca IPA interroga l'Indice PA; con doppio click sul nominativo si caricano tutti i campi del mittente.",
+         "fonte": {"path": "04 - Protocollo/008 - arrivo.md", "sezione": "Campi obbligatori › Mittente"}}
+      ]
+    },
+    {
+      "id": "C_PEC", "argomento": "PROT_PEC", "titolo": "Protocollare PEC ed e-mail in arrivo", "durata_min": 10,
+      "unita": [
+        {"tipo": "video", "titolo": "Protocollare una PEC o un'e-mail", "path": "04 - Protocollo/video/1_login_protocollazione_arrivi_cartaceo_pec_fattura.md", "anchor": "protocollare-una-pec-o-un-e-mail"},
+        {"tipo": "guida", "titolo": "Protocollare e scartare una mail", "path": "04 - Protocollo/020 - email.md", "anchor": "protocollare-una-mail"},
+        {"tipo": "guida", "titolo": "Scartare una mail", "path": "04 - Protocollo/020 - email.md", "anchor": "scartare-una-mail"},
+        {"tipo": "faq", "titolo": "FAQ: gli allegati non vengono allegati automaticamente", "path": "04 - Protocollo/021 - faq.md", "anchor": "i-documenti-arrivati-tramite-e-mail-non-vengono-allegati-automaticamente-al-protocollo"},
+        {"tipo": "faq", "titolo": "FAQ: le mail non compaiono nell'elenco", "path": "04 - Protocollo/021 - faq.md", "anchor": "le-mail-non-sono-visibili-nell-elenco-delle-mail-da-protocollare"}
+      ],
+      "quiz": [
+        {"domanda": "Una PEC contiene un allegato di 35 MB che non viene allegato automaticamente al protocollo. Cosa fai?",
+         "opzioni": ["Scarto la mail e chiedo il reinvio", "Scarico l'allegato sul pc e lo carico nel protocollo con il bottone Da File", "Apro subito un ticket all'assistenza", "Premo di nuovo Ricevi finché non compare"],
+         "corretta": 1, "spiegazione": "Sopra i 20 MB l'allegato non viene importato: va scaricato e caricato con Da File, come per gli arrivi cartacei.",
+         "fonte": {"path": "04 - Protocollo/021 - faq.md", "sezione": "I documenti arrivati tramite e-mail non vengono allegati automaticamente al protocollo"}},
+        {"domanda": "Che fine fanno le mail scartate?",
+         "opzioni": ["Vengono eliminate definitivamente", "Vengono rinviate al mittente", "Vengono spostate in \"Email Scartate e Inoltrate\" e si possono ripristinare", "Restano nell'elenco con un'icona grigia"],
+         "corretta": 2, "spiegazione": "Le mail scartate non vengono eliminate: sono spostate in Email Scartate e Inoltrate, da cui si possono rivedere e ripristinare.",
+         "fonte": {"path": "04 - Protocollo/020 - email.md", "sezione": "Scartare una mail"}},
+        {"domanda": "L'allegato di una mail non ha l'estensione nel nome (es. manca \".pdf\"). Qual è la procedura corretta?",
+         "opzioni": ["Protocollare la mail senza allegato", "Scaricarlo, verificarne l'estensione aprendolo, rinominarlo con l'estensione corretta e caricarlo con Da File", "Rinominare la mail in Protocolla E-mail", "Convertirlo in PDF con la funzione Marcatura"],
+         "corretta": 1, "spiegazione": "La FAQ indica di scaricare il file, verificarne l'estensione, rinominarlo e caricarlo con Da File; in alternativa si chiede al mittente di reinviarlo.",
+         "fonte": {"path": "04 - Protocollo/021 - faq.md", "sezione": "I documenti arrivati tramite e-mail non vengono allegati automaticamente al protocollo"}},
+        {"domanda": "Alcune mail non compaiono tra quelle da protocollare perché qualcuno le ha spostate dalla Posta in arrivo di Outlook. Cosa fai?",
+         "opzioni": ["Le ricollochi nella Posta in arrivo di Outlook e avvii Ricevi in Protocolla E-mail", "Le inoltri all'indirizzo del protocollo", "Le protocolli a mano come documento cartaceo", "Chiedi all'amministratore di cambiare la visibilità"],
+         "corretta": 0, "spiegazione": "Le mail vanno ricollocate nella cartella Posta in Arrivo e va avviato il Ricevi in Protocolla E-mail.",
+         "fonte": {"path": "04 - Protocollo/021 - faq.md", "sezione": "Le mail non sono visibili nell'elenco delle mail da protocollare"}}
+      ]
+    },
+    {
+      "id": "C_PARTENZA", "argomento": "PROT_PARTENZA", "titolo": "Protocollare una partenza e inviare la PEC", "durata_min": 10,
+      "unita": [
+        {"tipo": "video", "titolo": "Partenza, firma e invio PEC", "path": "04 - Protocollo/video/2_protocollazione_partenze.md", "anchor": null},
+        {"tipo": "faq", "titolo": "FAQ: l'e-mail non è stata inviata", "path": "04 - Protocollo/021 - faq.md", "anchor": "l-e-mail-non-e-stata-inviata"},
+        {"tipo": "faq", "titolo": "FAQ: inviata solo ad alcuni destinatari", "path": "04 - Protocollo/021 - faq.md", "anchor": "nel-protocollo-in-partenza-sono-presenti-piu-destinatari-ma-la-mail-e-stata-inviata-solo-ad-alcuni-indirizzi"},
+        {"tipo": "faq", "titolo": "FAQ: modificare un protocollo già inviato", "path": "04 - Protocollo/021 - faq.md", "anchor": "modificare-un-protocollo-gia-inviato"}
+      ],
+      "quiz": [
+        {"domanda": "Come verifichi che la mail di un protocollo in partenza è stata effettivamente inviata?",
+         "opzioni": ["Compare la bustina accanto all'indirizzo", "Il protocollo diventa di colore verde", "Arriva una notifica nel calendario", "Il numero di protocollo viene ricalcolato"],
+         "corretta": 0, "spiegazione": "Se è presente la bustina accanto all'indirizzo, l'invio è stato fatto.",
+         "fonte": {"path": "04 - Protocollo/021 - faq.md", "sezione": "L'e-mail non è stata inviata"}},
+        {"domanda": "Un protocollo con molti destinatari è stato inviato solo ad alcuni, perché il gestore di posta limita gli invii al minuto. Cosa fai?",
+         "opzioni": ["Crei un nuovo protocollo per i destinatari mancanti", "Riapri il protocollo e clicchi Notifica Destinatari: l'invio riprende da dove si era interrotto", "Elimini i destinatari già serviti e reinvii", "Apri un ticket: il protocollo ha un limite di destinatari"],
+         "corretta": 1, "spiegazione": "Il programma riprende l'invio da dove si è interrotto, senza reinviare a chi ha già ricevuto. Lasciare passare un minuto tra un invio e l'altro.",
+         "fonte": {"path": "04 - Protocollo/021 - faq.md", "sezione": "Nel protocollo in partenza sono presenti più destinatari, ma la mail è stata inviata solo ad alcuni indirizzi"}},
+        {"domanda": "Devi correggere un protocollo già inviato via mail. Qual è il primo passo?",
+         "opzioni": ["Annullare il protocollo", "Sbloccarlo cliccando sui lucchetti accanto ai destinatari che lo hanno ricevuto", "Duplicarlo e modificare la copia", "Chiedere all'amministratore di riaprirlo"],
+         "corretta": 1, "spiegazione": "Si sblocca con i lucchetti, si modifica, si registra inserendo la motivazione e si reinvia con Notifica Destinatari.",
+         "fonte": {"path": "04 - Protocollo/021 - faq.md", "sezione": "Modificare un protocollo già inviato"}},
+        {"domanda": "Hai inviato una PEC a un indirizzo e-mail non certificato. Quali ricevute ti aspetti?",
+         "opzioni": ["Accettazione e avvenuta consegna", "Solo la ricevuta di accettazione del proprio gestore", "Solo l'avvenuta consegna", "Nessuna: l'invio viene bloccato"],
+         "corretta": 1, "spiegazione": "Da PEC a mail ordinaria si ottiene solo la ricevuta di accettazione del proprio gestore.",
+         "fonte": {"path": "04 - Protocollo/021 - faq.md", "sezione": "La pec è stata inviata, ma non sono presenti le ricevute di accettazione e avvenuta-consegna"}}
+      ]
+    },
+    {
+      "id": "C_FATTURE", "argomento": "PROT_FATTURE", "titolo": "Fatture elettroniche: arrivo, invio e rifiuto", "durata_min": 9,
+      "unita": [
+        {"tipo": "video", "titolo": "Protocollare una fattura in arrivo", "path": "04 - Protocollo/video/1_login_protocollazione_arrivi_cartaceo_pec_fattura.md", "anchor": "protocollare-una-fattura-elettronica-in-arrivo"},
+        {"tipo": "video", "titolo": "Inviare una fattura in partenza", "path": "04 - Protocollo/video/3_invio_fatture.md", "anchor": null},
+        {"tipo": "video", "titolo": "Rifiutare una fattura ricevuta", "path": "04 - Protocollo/video/4_rifiuto_fatture.md", "anchor": null}
+      ],
+      "quiz": [
+        {"domanda": "In Protocolla Mail, come riconosci una fattura elettronica?",
+         "opzioni": ["Dall'oggetto in maiuscolo", "Dall'icona con il simbolo dell'euro", "Dal mittente SDI evidenziato in rosso", "Dalla colonna Giorni"],
+         "corretta": 1, "spiegazione": "Le fatture elettroniche si riconoscono dall'icona con il simbolo dell'euro.",
+         "fonte": {"path": "04 - Protocollo/video/1_login_protocollazione_arrivi_cartaceo_pec_fattura.md", "sezione": "Protocollare una fattura elettronica in arrivo"}},
+        {"domanda": "Per protocollare una fattura in partenza, cosa selezioni nel campo Tipo Doc.?",
+         "opzioni": ["Documento formale", "Fattura Elettronica in Partenza", "Partenza generica", "Notifica SDI"],
+         "corretta": 1, "spiegazione": "Si seleziona Fattura Elettronica in Partenza e si richiama l'oggetto precaricato Fattura Elettronica.",
+         "fonte": {"path": "04 - Protocollo/video/3_invio_fatture.md", "sezione": "Protocollare e inviare una fattura elettronica in partenza"}},
+        {"domanda": "Da dove si avvia il rifiuto di una fattura ricevuta?",
+         "opzioni": ["Dal protocollo in ingresso: Riscontro → Rifiuta Fattura", "Da Protocolla Mail: Scarta", "Dal menù Fatture → Elimina", "Dal portlet Documenti in carico: Rifiuta assegnazione"],
+         "corretta": 0, "spiegazione": "Si apre il protocollo in ingresso, si usa Riscontro e si sceglie Rifiuta Fattura.",
+         "fonte": {"path": "04 - Protocollo/video/4_rifiuto_fatture.md", "sezione": "Rifiutare una fattura elettronica ricevuta"}},
+        {"domanda": "Dopo aver indicato la motivazione del rifiuto, cosa fa il gestionale?",
+         "opzioni": ["Elimina la fattura", "Predispone un protocollo di partenza con parte dei dati già compilati", "Invia subito la PEC al fornitore", "Annulla il protocollo in arrivo"],
+         "corretta": 1, "spiegazione": "Il gestionale predispone il protocollo di partenza: vanno controllati e completati i dati, poi si registra e si spedisce.",
+         "fonte": {"path": "04 - Protocollo/video/4_rifiuto_fatture.md", "sezione": "Rifiutare una fattura elettronica ricevuta"}}
+      ]
+    },
+    {
+      "id": "C_ASSEGNAZIONI", "argomento": "PROT_ASSEGNAZIONI", "titolo": "Documenti interni e protocolli assegnati", "durata_min": 9,
+      "unita": [
+        {"tipo": "video", "titolo": "Documento interno e assegnazioni", "path": "04 - Protocollo/video/5_protocollazione_interni_e_gestione_protocolli_assegnati.md", "anchor": null},
+        {"tipo": "guida", "titolo": "Gestione o visione", "path": "04 - Protocollo/056 - trasmissioni.md", "anchor": "gestione-vs-visione"},
+        {"tipo": "guida", "titolo": "Registrazione e rifiuto", "path": "04 - Protocollo/056 - trasmissioni.md", "anchor": "registrazione-e-rifiuto-del-protocollo"}
+      ],
+      "quiz": [
+        {"domanda": "Quale funzione usi per protocollare un documento interno?",
+         "opzioni": ["Gestione Arrivi/Partenze → Doc. Formale", "Protocolla Mail", "Gestione Conservazione", "Gestione Arrivi/Partenze → Arrivo"],
+         "corretta": 0, "spiegazione": "Il documento interno si protocolla da Gestione Arrivi/Partenze → Doc. Formale.",
+         "fonte": {"path": "04 - Protocollo/video/5_protocollazione_interni_e_gestione_protocolli_assegnati.md", "sezione": "Protocollare un documento interno e gestire le assegnazioni"}},
+        {"domanda": "Dove trova l'assegnatario i protocolli da lavorare?",
+         "opzioni": ["Nel portlet Documenti in carico", "Nella casella PEC", "In Stampa Registro Giornaliero", "Solo tramite la ricerca generale"],
+         "corretta": 0, "spiegazione": "L'assegnatario apre il protocollo da Documenti in carico, dove può prenderlo in carico o rifiutarlo.",
+         "fonte": {"path": "04 - Protocollo/video/5_protocollazione_interni_e_gestione_protocolli_assegnati.md", "sezione": "Lavorare il protocollo assegnato"}},
+        {"domanda": "Vuoi trasmettere un protocollo a un collega solo in visione. Cosa fai?",
+         "opzioni": ["Togli la spunta dalla colonna Gest.", "Imposti una data nella colonna Termine", "Usi Metti in Riservato", "Lo assegni all'ufficio invece che alla persona"],
+         "corretta": 0, "spiegazione": "Con la spunta in Gest. il documento va in gestione; togliendola viene trasmesso solo in visione.",
+         "fonte": {"path": "04 - Protocollo/056 - trasmissioni.md", "sezione": "Gestione vs. Visione"}},
+        {"domanda": "Se un assegnatario rifiuta di prendere in carico il protocollo, cosa succede?",
+         "opzioni": ["Il protocollo viene annullato", "Torna sul portlet Documenti in carico di chi lo ha inviato, che può riassegnarlo", "Passa automaticamente al responsabile d'ufficio", "Resta in sospeso finché non scade il termine"],
+         "corretta": 1, "spiegazione": "Il protocollo ritorna a chi lo ha inviato, così che possa riassegnarlo a un altro utente o ufficio.",
+         "fonte": {"path": "04 - Protocollo/056 - trasmissioni.md", "sezione": "Registrazione e rifiuto del protocollo"}}
+      ]
+    },
+    {
+      "id": "C_RICERCA", "argomento": "PROT_RICERCA", "titolo": "Ricerca e visibilità dei protocolli", "durata_min": 8,
+      "unita": [
+        {"tipo": "video", "titolo": "Cercare un protocollo", "path": "04 - Protocollo/video/6_ricerca_protocolli.md", "anchor": null},
+        {"tipo": "guida", "titolo": "Visibilità di default", "path": "04 - Protocollo/058 - visibilita.md", "anchor": "visibilita-di-default"},
+        {"tipo": "faq", "titolo": "FAQ: alcuni protocolli non sono visibili", "path": "04 - Protocollo/021 - faq.md", "anchor": "in-fase-di-ricerca-alcuni-protocolli-non-sono-visibili"}
+      ],
+      "quiz": [
+        {"domanda": "Premi Elenca senza impostare filtri. Cosa mostra il programma?",
+         "opzioni": ["Tutti i protocolli dell'ente di tutti gli anni", "I protocolli dell'anno corrente a cui il tuo profilo ha accesso", "Solo i protocolli che hai inserito oggi", "Un messaggio di errore: serve almeno un filtro"],
+         "corretta": 1, "spiegazione": "Senza filtri il programma consulta l'anno corrente e mostra i protocolli a cui il profilo ha accesso.",
+         "fonte": {"path": "04 - Protocollo/video/6_ricerca_protocolli.md", "sezione": "Cercare un protocollo e verificare la lavorazione degli assegnatari"}},
+        {"domanda": "Un protocollo è assegnato per nome a un tuo collega di ufficio. Tu cosa vedi?",
+         "opzioni": ["Lo ricevi anche tu sulla scrivania", "Non lo ricevi sulla scrivania, ma puoi trovarlo dalla ricerca generale", "Non puoi vederlo in nessun modo", "Lo vedi solo se sei amministratore"],
+         "corretta": 1, "spiegazione": "Gli altri utenti dello stesso ufficio non lo ricevono in Documenti in Carico, ma vi accedono dalla ricerca generale.",
+         "fonte": {"path": "04 - Protocollo/058 - visibilita.md", "sezione": "Visibilità di default"}},
+        {"domanda": "Un utente con visibilità \"per SOGGETTO\" quali protocolli vede?",
+         "opzioni": ["Tutti quelli dell'ente", "Quelli del proprio ufficio", "Solo quelli che ha inserito lui", "Quelli del proprio settore"],
+         "corretta": 2, "spiegazione": "Per SOGGETTO: solo i protocolli inseriti dall'utente; per UFFICIO: quelli dei suoi uffici; per ENTE: tutti.",
+         "fonte": {"path": "04 - Protocollo/021 - faq.md", "sezione": "In fase di ricerca, alcuni protocolli non sono visibili"}},
+        {"domanda": "Un protocollo deve essere accessibile solo alla persona assegnataria e non al suo ufficio. Quale funzione usi?",
+         "opzioni": ["Metti in Riservato", "Trasmissione in visione", "Fascicolazione", "Annulla Password"],
+         "corretta": 0, "spiegazione": "Per limitare l'accesso alla sola persona indicata nell'assegnazione si usa Metti in Riservato.",
+         "fonte": {"path": "04 - Protocollo/058 - visibilita.md", "sezione": "Visibilità di default"}}
+      ]
+    },
+    {
+      "id": "C_ACCESSO", "argomento": "PROT_ACCESSO", "titolo": "Accesso e sessioni utente", "durata_min": 4,
+      "unita": [
+        {"tipo": "video", "titolo": "Accedere e consultare la scrivania", "path": "04 - Protocollo/video/1_login_protocollazione_arrivi_cartaceo_pec_fattura.md", "anchor": "accedere-e-consultare-la-scrivania"},
+        {"tipo": "faq", "titolo": "FAQ: numero massimo di accessi raggiunto", "path": "04 - Protocollo/021 - faq.md", "anchor": "impossibile-accedere-al-protocollo-informatico-per-raggiungimento-del-numero-massimo-di-accessi"}
+      ],
+      "quiz": [
+        {"domanda": "Di default, quante volte contemporaneamente un utente può accedere al protocollo con il proprio profilo?",
+         "opzioni": ["Una", "Due", "Tre", "Senza limiti"],
+         "corretta": 2, "spiegazione": "Di default fino a tre accessi contemporanei, aprendo più pagine del browser.",
+         "fonte": {"path": "04 - Protocollo/021 - faq.md", "sezione": "Impossibile accedere al protocollo informatico per raggiungimento del numero massimo di accessi"}},
+        {"domanda": "Come eviti che si esauriscano gli accessi disponibili?",
+         "opzioni": ["Chiudendo solo la scheda del browser", "Uscendo sempre con Termina Sessione e chiudendo correttamente il browser", "Cambiando password ogni giorno", "Usando sempre la stessa scheda"],
+         "corretta": 1, "spiegazione": "Bisogna uscire con Termina Sessione (in alto a destra) e chiudere correttamente il browser.",
+         "fonte": {"path": "04 - Protocollo/021 - faq.md", "sezione": "Impossibile accedere al protocollo informatico per raggiungimento del numero massimo di accessi"}}
+      ]
+    },
+    {
+      "id": "C_CONSERVAZIONE", "argomento": "PROT_CONSERVAZIONE", "titolo": "Conservazione e registro giornaliero", "durata_min": 5,
+      "unita": [
+        {"tipo": "video", "titolo": "Conservazione e registro giornaliero", "path": "04 - Protocollo/video/7_conservazione.md", "anchor": null}
+      ],
+      "quiz": [
+        {"domanda": "Quali filtri ti aiutano a concentrarti sui documenti in un certo stato in Gestione Conservazione?",
+         "opzioni": ["Stato Versamenti e Stato Conservazione", "Tipo Doc. e Mittente", "Gest. e Termine", "Account e Interoperabili"],
+         "corretta": 0, "spiegazione": "Stato Versamenti e Stato Conservazione permettono di filtrare per lo stato da verificare.",
+         "fonte": {"path": "04 - Protocollo/video/7_conservazione.md", "sezione": "Consultare la conservazione e il registro giornaliero di protocollo"}},
+        {"domanda": "Chi genera e versa il registro giornaliero di protocollo?",
+         "opzioni": ["L'operatore, a fine giornata", "Il programma, in automatico entro la giornata successiva", "Il responsabile della conservazione, ogni settimana", "L'assistenza Palitalsoft su richiesta"],
+         "corretta": 1, "spiegazione": "Generazione e versamento del registro giornaliero avvengono in automatico entro la giornata successiva.",
+         "fonte": {"path": "04 - Protocollo/video/7_conservazione.md", "sezione": "Consultare la conservazione e il registro giornaliero di protocollo"}}
+      ]
+    },
+    {
+      "id": "C_CERTIFICATI", "argomento": "DEMO_CERTIFICATI", "titolo": "Rilascio dei certificati anagrafici", "durata_min": 8,
+      "unita": [
+        {"tipo": "guida", "titolo": "Selezione del soggetto e ricerca in ANPR", "path": "03 - SERVIZI DEMOGRAFICI/287 - Rilascio di Certificati Anagrafici.md", "anchor": "selezione-del-soggetto"},
+        {"tipo": "guida", "titolo": "Selezione del tipo di certificato", "path": "03 - SERVIZI DEMOGRAFICI/287 - Rilascio di Certificati Anagrafici.md", "anchor": "selezione-del-tipo-di-certificato"},
+        {"tipo": "guida", "titolo": "Diritti e bollo", "path": "03 - SERVIZI DEMOGRAFICI/287 - Rilascio di Certificati Anagrafici.md", "anchor": "diritti-e-bollo"},
+        {"tipo": "guida", "titolo": "Anteprima e stampa", "path": "03 - SERVIZI DEMOGRAFICI/287 - Rilascio di Certificati Anagrafici.md", "anchor": "anteprima-e-stampa"}
+      ],
+      "quiz": [
+        {"domanda": "Come cerchi un cittadino direttamente in ANPR?",
+         "opzioni": ["Digiti il codice fiscale e premi F8", "Digiti per intero cognome e nome e clicchi sull'icona della bandiera", "Usi la lente di ricerca dell'archivio locale", "Selezioni \"Per Estero\" nel menu a tendina"],
+         "corretta": 1, "spiegazione": "Per ANPR si digitano per intero cognome e nome e si clicca sull'icona della bandiera; con nominativi ricorrenti si aggiunge la data di nascita.",
+         "fonte": {"path": "03 - SERVIZI DEMOGRAFICI/287 - Rilascio di Certificati Anagrafici.md", "sezione": "Selezione del soggetto › Ricerca in ANPR"}},
+        {"domanda": "Qual è la differenza tra Anteprima certificato e Stampa?",
+         "opzioni": ["Nessuna, cambia solo il formato", "L'anteprima non memorizza i diritti, la stampa sì", "L'anteprima memorizza i diritti, la stampa no", "La stampa è possibile solo per i certificati ANPR"],
+         "corretta": 1, "spiegazione": "Con Anteprima il certificato si visualizza senza memorizzare i diritti; con Stampa, appena prodotto a video, i diritti vengono memorizzati.",
+         "fonte": {"path": "03 - SERVIZI DEMOGRAFICI/287 - Rilascio di Certificati Anagrafici.md", "sezione": "Anteprima e Stampa"}},
+        {"domanda": "Come ottieni un certificato cumulativo ANPR?",
+         "opzioni": ["Selezionando più certificati e premendo Importa", "Stampando i certificati uno alla volta e unendo i PDF", "Scegliendo il Certificato locale Citywareonline", "Non è possibile"],
+         "corretta": 0, "spiegazione": "Se il soggetto è presente in ANPR si possono selezionare più certificati e usare il tasto Importa.",
+         "fonte": {"path": "03 - SERVIZI DEMOGRAFICI/287 - Rilascio di Certificati Anagrafici.md", "sezione": "Selezione del tipo di certificato"}},
+        {"domanda": "Ti serve un certificato locale modificabile (docx). Quale scegli e per chi è disponibile?",
+         "opzioni": ["Certificato ANPR, per tutti i cittadini", "Certificato locale Citywareonline, solo per i residenti", "Certificato locale pdf, per i non residenti", "Atto notorio, solo AIRE"],
+         "corretta": 1, "spiegazione": "Il Certificato locale Citywareonline si stampa in docx ed è modificabile; vale per i soli residenti.",
+         "fonte": {"path": "03 - SERVIZI DEMOGRAFICI/287 - Rilascio di Certificati Anagrafici.md", "sezione": "Selezione del tipo di certificato"}}
+      ]
+    }
+  ]
+}

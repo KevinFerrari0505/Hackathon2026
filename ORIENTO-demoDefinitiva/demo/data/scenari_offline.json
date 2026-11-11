@@ -1,0 +1,245 @@
+{
+ "_nota": "Motore OFFLINE (senza LLM): risposte preparate per i casi dimostrativi, scritte riprendendo il testo delle guide citate. Si usa quando non c'e' la chiave OpenAI o come riserva durante il pitch. Per tutto il resto il motore offline propone la guida piu' pertinente trovata dalla ricerca.",
+ "scenari": [
+  {
+   "id": "pec_allegati",
+   "argomento": "PROT_PEC",
+   "tipo": "supporto_operativo",
+   "match": [
+    [
+     "allegat"
+    ],
+    [
+     "pec",
+     "mail",
+     "posta"
+    ]
+   ],
+   "chiarimento": {
+    "domanda": "Per capire la causa, mi dici qualcosa sull'allegato che non viene importato? Per esempio: è un file molto grande (oltre 20 MB)? Il nome contiene caratteri speciali? Nel nome manca l'estensione (es. \".pdf\")?",
+    "rami": [
+     {
+      "match": [
+       "20",
+       "mb",
+       "grand",
+       "pesant",
+       "dimension",
+       "mega"
+      ],
+      "risposta": "Il problema dipende dalla **dimensione dell'allegato**: sopra i 20 MB il file non viene allegato automaticamente al protocollo.\n\nCome procedere:\n1. Scarica l'allegato della mail sul tuo pc.\n2. Nel protocollo, nella sezione **Allegati**, clicca il bottone **Da File**.\n3. Seleziona il file scaricato, come per un arrivo cartaceo.\n4. Verifica che il documento compaia nella griglia degli allegati."
+     },
+     {
+      "match": [
+       "caratter",
+       "simbol",
+       "accent",
+       "apostrof",
+       "spazi"
+      ],
+      "risposta": "Il problema dipende dal **nome dell'allegato**, che contiene un carattere speciale: in questo caso il file non viene allegato automaticamente.\n\nCome procedere:\n1. Scarica l'allegato sul tuo pc.\n2. Rinominalo togliendo i caratteri speciali.\n3. Nel protocollo, nella sezione **Allegati**, caricalo con il bottone **Da File**, come per gli arrivi cartacei."
+     },
+     {
+      "match": [
+       "estension",
+       ".pdf",
+       "senza pdf",
+       "manca"
+      ],
+      "risposta": "Il problema dipende dall'**estensione mancante** nel nome dell'allegato (es. \".pdf\").\n\nCome procedere:\n1. Scarica l'allegato sul tuo pc.\n2. Apri il file per verificarne il tipo.\n3. Rinominalo aggiungendo l'estensione corretta.\n4. Caricalo nel protocollo con il bottone **Da File**, come per gli arrivi cartacei.\n\nIn alternativa puoi chiedere al mittente di inviare di nuovo l'allegato completo di estensione."
+     }
+    ],
+    "default": "La guida indica tre cause possibili quando l'allegato di una mail non viene allegato automaticamente al protocollo:\n\n1. **Dimensione oltre i 20 MB**\n2. **Carattere speciale nel nome** del file\n3. **Estensione mancante** nel nome (es. \".pdf\")\n\nIn tutti e tre i casi la soluzione è la stessa: scarica l'allegato sul pc (rinominandolo se serve) e caricalo nel protocollo con il bottone **Da File**, come per gli arrivi cartacei. Se manca l'estensione, puoi anche chiedere al mittente di reinviare il file."
+   },
+   "fonti": [
+    {
+     "path": "04 - Protocollo/021 - faq.md",
+     "anchor": "i-documenti-arrivati-tramite-e-mail-non-vengono-allegati-automaticamente-al-protocollo",
+     "sezione": "I documenti arrivati tramite e-mail non vengono allegati automaticamente al protocollo"
+    }
+   ]
+  },
+  {
+   "id": "fattura_rifiuto",
+   "argomento": "PROT_FATTURE",
+   "tipo": "supporto_operativo",
+   "match": [
+    [
+     "fattur"
+    ],
+    [
+     "rifiut",
+     "respin"
+    ]
+   ],
+   "risposta": "Per **rifiutare una fattura elettronica ricevuta**:\n\n1. Apri il protocollo in ingresso a cui è associata la fattura.\n2. Usa **Riscontro** e scegli **Rifiuta Fattura**.\n3. Indica la motivazione del rifiuto e conferma: il gestionale predispone il protocollo di partenza con parte dei dati già compilati.\n4. Controlla i dati proposti e completa quelli mancanti (firmatario, destinatario, classificazione).\n5. Apri il file XML di notifica negli **Allegati** e verifica che riporti l'esito e la motivazione.\n6. Premi **Registra** e completa la spedizione dalla finestra della PEC.",
+   "fonti": [
+    {
+     "path": "04 - Protocollo/video/4_rifiuto_fatture.md",
+     "anchor": null,
+     "sezione": "Rifiutare una fattura elettronica ricevuta"
+    }
+   ]
+  },
+  {
+   "id": "fattura_arrivo",
+   "argomento": "PROT_FATTURE",
+   "tipo": "supporto_operativo",
+   "match": [
+    [
+     "fattur"
+    ],
+    [
+     "arriv",
+     "ricev",
+     "entrat",
+     "ingress"
+    ]
+   ],
+   "risposta": "Ecco come protocollare una **fattura elettronica in arrivo**:\n\n1. Apri **Protocolla Mail** e riconosci le fatture elettroniche dall'**icona con il simbolo dell'euro**. Apri il messaggio e consulta la fattura.\n2. Clicca **Protocolla**. Verifica la classificazione e l'assegnazione proposte in base al codice destinatario, oltre agli allegati già presenti.\n3. Integra i dati mancanti, come il mittente se non risulta già valorizzato.\n4. Premi **Registra** e controlla l'esito prima di passare alla comunicazione successiva.",
+   "fonti": [
+    {
+     "path": "04 - Protocollo/video/1_login_protocollazione_arrivi_cartaceo_pec_fattura.md",
+     "anchor": "protocollare-una-fattura-elettronica-in-arrivo",
+     "sezione": "Protocollare una fattura elettronica in arrivo"
+    }
+   ]
+  },
+  {
+   "id": "protocolli_non_visibili",
+   "argomento": "PROT_RICERCA",
+   "tipo": "supporto_operativo",
+   "match": [
+    [
+     "protocoll"
+    ],
+    [
+     "vedo",
+     "visibil",
+     "trovo",
+     "compai",
+     "vedere"
+    ]
+   ],
+   "risposta": "Le cause documentate sono due, ed entrambe vanno verificate dall'**utente amministratore** del vostro ente:\n\n1. **Permessi di visibilità del tuo profilo.** Ogni utente vede i protocolli in base al ruolo: per *SOGGETTO* (solo quelli inseriti da lui), per *UFFICIO* (quelli dei suoi uffici) o per *ENTE* (tutti). L'amministratore li controlla da **menu principale → Gestione Accessi → Utenti**, scheda *Profilo Applicativi - Protocollo*.\n2. **Profilo non configurato completamente** (succede soprattutto ai nuovi utenti). Nella scheda *Profilo Applicativi* deve essere presente il **Codice Destinatario**, e in **Protocollo → Archivi → Mittenti/Destinatari** l'utente deve essere associato ad almeno un ufficio.\n\nRicorda anche che, se un protocollo è assegnato per nome a un collega, tu non lo ricevi sulla scrivania ma puoi trovarlo dalla ricerca generale, a meno che non sia stato messo **in riservato**.",
+   "fonti": [
+    {
+     "path": "04 - Protocollo/021 - faq.md",
+     "anchor": "in-fase-di-ricerca-alcuni-protocolli-non-sono-visibili",
+     "sezione": "In fase di ricerca, alcuni protocolli non sono visibili"
+    },
+    {
+     "path": "04 - Protocollo/058 - visibilita.md",
+     "anchor": "visibilita-di-default",
+     "sezione": "Visibilità di default"
+    }
+   ]
+  },
+  {
+   "id": "max_accessi",
+   "argomento": "PROT_ACCESSO",
+   "tipo": "supporto_operativo",
+   "match": [
+    [
+     "access",
+     "entrare",
+     "login"
+    ],
+    [
+     "massim",
+     "bloccat",
+     "limite",
+     "non riesco"
+    ]
+   ],
+   "risposta": "Ogni utente può accedere al protocollo **fino a tre volte contemporaneamente** (di default). Dopo un arresto anomalo del browser o più password errate, gli accessi disponibili possono esaurirsi.\n\nPer sbloccarti serve l'**utente amministratore** del tuo ente:\n1. Accede da **menu principale → Gestione Accessi → Utenti** e apre il tuo profilo.\n2. Nella scheda *Generale* annulla la password e ne imposta una temporanea, che personalizzerai al primo accesso: così si azzerano gli accessi rimasti in memoria.\n\nPer evitare che succeda di nuovo, esci sempre con **Termina Sessione** (in alto a destra) e chiudi correttamente il browser.",
+   "fonti": [
+    {
+     "path": "04 - Protocollo/021 - faq.md",
+     "anchor": "impossibile-accedere-al-protocollo-informatico-per-raggiungimento-del-numero-massimo-di-accessi",
+     "sezione": "Impossibile accedere al protocollo informatico per raggiungimento del numero massimo di accessi"
+    }
+   ]
+  },
+  {
+   "id": "partenza_destinatari",
+   "argomento": "PROT_PARTENZA",
+   "tipo": "supporto_operativo",
+   "match": [
+    [
+     "destinatar"
+    ],
+    [
+     "solo alcuni",
+     "non tutti",
+     "alcuni",
+     "parte"
+    ]
+   ],
+   "risposta": "Il protocollo informatico non ha limiti di destinatari, ma alcuni gestori di posta (es. Legalmail) hanno un **numero massimo di invii al minuto**.\n\nCome procedere:\n1. Riapri il protocollo.\n2. Clicca **Notifica Destinatari**: il programma riprende l'invio da dove si è interrotto, quindi chi ha già ricevuto la mail non la riceverà una seconda volta.\n3. Lascia trascorrere un minuto tra un invio e l'altro e assicurati che nessun altro utente stia inviando mail nello stesso momento.",
+   "fonti": [
+    {
+     "path": "04 - Protocollo/021 - faq.md",
+     "anchor": "nel-protocollo-in-partenza-sono-presenti-piu-destinatari-ma-la-mail-e-stata-inviata-solo-ad-alcuni-indirizzi",
+     "sezione": "Nel protocollo in partenza sono presenti più destinatari, ma la mail è stata inviata solo ad alcuni indirizzi"
+    }
+   ]
+  },
+  {
+   "id": "errore_non_documentato",
+   "argomento": "PROT_PARTENZA",
+   "tipo": "anomalia",
+   "match": [
+    [
+     "errore",
+     "error",
+     "eccezione",
+     "si blocca",
+     "crash"
+    ]
+   ],
+   "chiarimento": {
+    "domanda": "Per capire se si tratta di un caso documentato: in quale funzione compare il messaggio, e qual è il testo esatto dell'errore? Hai già verificato che i campi obbligatori (oggetto, destinatario/mittente e classificazione) siano compilati?",
+    "rami": [],
+    "default": null
+   },
+   "escalation": {
+    "motivo": "Il messaggio di errore segnalato non è descritto nella documentazione disponibile. Le guide documentano solo l'errore per dati obbligatori mancanti, che l'operatore ha già escluso. Si tratta di una possibile anomalia del software: serve l'analisi di un tecnico.",
+    "oggetto": "PROTOCOLLO – Errore in registrazione con campi obbligatori compilati",
+    "tentativi": [
+     "Verificata la compilazione dei campi obbligatori (oggetto, destinatario/mittente, classificazione), come indicato dalla guida"
+    ]
+   },
+   "fonti": [
+    {
+     "path": "04 - Protocollo/043 - partenza.md",
+     "anchor": "errore-per-dati-obbligatori-mancanti",
+     "sezione": "Registrazione del protocollo › Errore per dati obbligatori mancanti"
+    },
+    {
+     "path": "04 - Protocollo/008 - arrivo.md",
+     "anchor": "avvisi-e-messaggi-di-errore",
+     "sezione": "Registrazione del protocollo › Avvisi e messaggi di errore"
+    }
+   ]
+  },
+  {
+   "id": "certificato_anpr",
+   "argomento": "DEMO_CERTIFICATI",
+   "tipo": "supporto_operativo",
+   "match": [
+    [
+     "certificat"
+    ]
+   ],
+   "risposta": "I certificati si rilasciano da **Servizi Demografici > Anagrafe > Sportello > Servizi al Cittadino**.\n\n1. **Soggetto:** scrivi il cognome nel campo *Cognome* e scegli tra i nominativi suggeriti. Per un cittadino **non residente** usa ANPR: digita per intero cognome e nome e clicca sull'**icona della bandiera** (con nominativi molto ricorrenti aggiungi la data di nascita).\n2. **Tipo di certificato:** a destra scegli tra *Certificato locale* (pdf, solo residenti), *Certificato locale Citywareonline* (docx modificabile, solo residenti) o **Certificati ANPR** (il soggetto deve essere presente in ANPR). Selezionando più certificati ANPR e premendo **Importa** ottieni un certificato cumulativo.\n3. **Diritti:** indica *Esente*, *Semplice*, *Bollo* o *Bollo Virtuale* e l'eventuale motivo di esenzione.\n4. **Anteprima o Stampa:** l'*Anteprima certificato* non memorizza i diritti; con **Stampa** i diritti vengono memorizzati appena il certificato è prodotto a video. Poi puoi stamparlo, protocollarlo in partenza o scaricarlo.",
+   "fonti": [
+    {
+     "path": "03 - SERVIZI DEMOGRAFICI/287 - Rilascio di Certificati Anagrafici.md",
+     "anchor": null,
+     "sezione": "Rilascio di Certificati Anagrafici"
+    }
+   ]
+  }
+ ]
+}

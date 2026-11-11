@@ -1,0 +1,5 @@
+# Stampa lettere di nomina
+
+Permette la stampa delle lettere di nomina in massa e non singolarmente come è comunque possibile dall'elenco, vedi **Nomina Scrutatori**. Si rende possibile la selezione di un testo precompilato e si può selezionare il tipo di formato (**DOCX**, **PDF**). Il formato DOCX è modificabile.
+
+[Schermata dell'interfaccia "Stampa lettere di nomina": mostra i campi di configurazione con: Codice testo (campo di ricerca con lente), Tipo Output (menu a tendina con opzione "Documento in formato DOCX"), Cod. elezione (valore "13"), Data Elezione (valore "14/05/2023"), sezione Protocollo con campi Numero, Data, Onorario (€), Ritrovo (campo testo multiriga con esempio: "La S.V. dovrà trovarsi presso la sede della Sezione alla quale è assegnato alle ore 16.00 del giorno SABATO 13/05/2023 mettendosi a disposizione del Presidente di Seggio"), e campo Incarico (menu a tendina con valore "SCRUTATORE")]
