@@ -100,7 +100,16 @@ label.field > span { display: block; margin-bottom: 4px; }
 .hero { background: linear-gradient(120deg, var(--blue) 0%, #2a7fd4 100%); color: #fff; border-radius: 14px; padding: 24px 26px; display: grid; gap: 14px; }
 .hero h1 { color: #fff; }
 .hero .ask { display: flex; gap: 8px; }
-.hero .ask input { flex: 1; border: 0; padding: 12px 14px; border-radius: 8px; font-size: 16px; }
+.hero .ask input {
+    flex: 1;
+    border: 0;
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #17324d;
+    background: #fff;
+    -webkit-text-fill-color: #17324d;
+}
 .hero .ask .btn { background: var(--ink); border-color: var(--ink); }
 .chips { display: flex; gap: 8px; flex-wrap: wrap; }
 .chip { border: 1px solid var(--line); background: #fff; border-radius: 999px; padding: 5px 12px; font-size: 14px; cursor: pointer; color: var(--ink); text-align: left; }
